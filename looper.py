@@ -64,3 +64,4 @@ for myfreq in ['0.7GHz','0.8GHz','0.9GHz','1.0GHz','1.1GHz','1.2GHz','1.3GHz','1
 			caltime)
 		print ''
 		os.system('more obsparams.py')
+		os.system('python master.py')
