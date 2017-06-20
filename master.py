@@ -8,6 +8,7 @@ import mqt
 import os
 
 do_steps = [0,1,2,3]
+delete_ms = True
 
 def pokeTDLconf(filename,param,value):
 	lines = []
@@ -116,3 +117,6 @@ if 3 in do_steps:
 	cc+= 'solnorm=True,'
 	cc+= 'solint="inf")'
 	std.runcasapy(cc)
+
+if delete_ms:
+	os.system('rm -rf '+msName)
