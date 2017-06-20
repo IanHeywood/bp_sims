@@ -9,6 +9,7 @@ import os
 
 do_steps = [0,1,2,3]
 delete_ms = True
+mqt.MULTITHREAD = 8
 
 def pokeTDLconf(filename,param,value):
 	lines = []
@@ -106,7 +107,7 @@ if 2 in do_steps:
 	section='bp_sims',
 	args=['ms_sel.msname='+msName,
 		'tiggerlsm.filename=PKS_B1934-638_ATCA_BETA.lsm.html',
-		'ms_sel.tile_size=16'])
+		'ms_sel.tile_size=512'])
 
 # step = 3
 # Generate a bandpass table deriving corrections for DATA against MODEL_DATA 
