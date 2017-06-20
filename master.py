@@ -76,14 +76,8 @@ def write_obsparams(prefix,
 	print >>f,'coordsys="'+str(coordsys)+'"'
 	f.close()
 
-write_obsparams('bpsims',
-	'meerkat',
-	'0.58GHz',
-	32,
-	'1MHz',
-	-150,
-	300)
-
+# Stick a write_obsparams call in here to run in one-shot mode, otherwise use looper.py
+	
 # step = 0 
 # Read in obsparams file
 if 0 in do_steps:
