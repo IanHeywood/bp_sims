@@ -9,6 +9,7 @@ import os
 
 do_steps = [0,1,2,3]
 delete_ms = True
+solnorm = False
 mqt.MULTITHREAD = 8
 
 def pokeTDLconf(filename,param,value):
@@ -109,7 +110,7 @@ if 3 in do_steps:
 	cc = 'bandpass('
 	cc+= 'vis="'+msName+'",'
 	cc+= 'caltable="'+bpTable+'",'
-	cc+= 'solnorm=True,'
+	cc+= 'solnorm='+str(solnorm)+','
 	cc+= 'solint="inf")'
 	std.runcasapy(cc)
 
