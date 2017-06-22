@@ -133,3 +133,5 @@ for bpTable in bptabs:
 
 	specpickle = bpTable.replace('cal_','spec_').replace('.B','.p')
 	pickle.dump((freqs,spectrum),open(specpickle,'wb'))
+	
+	os.system('rm -rf '+msName)
