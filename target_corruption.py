@@ -118,7 +118,8 @@ for bpTable in bptabs:
 	scanLength = 28000
 	startTime = -14400
 	prefix = 'target'
-
+	xx,yy,zz,dishDiameters,coordsys = getAntennaPositions(myarray)
+	
 	projectName = prefix+'_'+myarray+'_'+minFreq+'_'+str(nChan)+'ch_'+chanWidth+'_'+str(int(scanLength/60.0))+'min'
 	msName = projectName+'.ms'
 	
