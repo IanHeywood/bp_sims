@@ -26,7 +26,6 @@ def sim_ms(prefix,myarray,minFreq,nChan,chanWidth,startTime,scanLength,xx,yy,zz,
 	projectName = prefix+'_'+myarray+'_'+minFreq+'_'+str(nChan)+'ch_'+chanWidth+'_'+str(int(scanLength/60.0))+'min'
 	RA_central = '19h39m25.027s' 
 	Dec_central = '-63d42m45.63s'
-	dishDiameter = 25.0
 	Stokes = 'XX XY YX YY'
 	integrationTime = '120s'
 	refTime = me.epoch('IAT','2018/01/01')
