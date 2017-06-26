@@ -62,7 +62,7 @@ bandfreqs = ['0.7GHz', '0.74GHz', '0.78GHz', '0.82GHz', '0.86GHz', '0.9GHz', '0.
 # bandfreqs = ['0.58GHz', '0.62GHz', '0.66GHz', '0.7GHz', '0.74GHz', '0.78GHz', '0.82GHz', '0.86GHz', '0.9GHz', '0.94GHz', '0.98GHz', '1.02GHz']
 
 # SKA-MID_Band-2
-# bandsfreqs = ['0.95GHz', '0.99GHz', '1.03GHz', '1.07GHz', '1.11GHz', '1.15GHz', '1.19GHz', '1.23GHz', '1.27GHz', '1.31GHz', '1.35GHz', '1.39GHz', '1.43GHz', '1.47GHz', '1.51GHz', '1.55GHz', '1.59GHz', '1.63GHz', '1.67GHz', '1.71GHz', '1.75GHz', '1.79GHz']
+# bandfreqs = ['0.95GHz', '0.99GHz', '1.03GHz', '1.07GHz', '1.11GHz', '1.15GHz', '1.19GHz', '1.23GHz', '1.27GHz', '1.31GHz', '1.35GHz', '1.39GHz', '1.43GHz', '1.47GHz', '1.51GHz', '1.55GHz', '1.59GHz', '1.63GHz', '1.67GHz', '1.71GHz', '1.75GHz', '1.79GHz']
 
 # SKA-MID_Band-1
 # bandfreqs = ['0.35GHz', '0.39GHz', '0.43GHz', '0.47GHz', '0.51GHz', '0.55GHz', '0.59GHz', '0.63GHz', '0.67GHz', '0.71GHz', '0.75GHz', '0.79GHz', '0.83GHz', '0.87GHz', '0.91GHz', '0.95GHz', '0.99GHz', '1.03GHz', '1.07GHz']
