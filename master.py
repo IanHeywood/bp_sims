@@ -11,6 +11,7 @@ do_steps = [0,1,2,3]
 delete_ms = True
 solnorm = False
 mqt.MULTITHREAD = 8
+ref_ant = '0'
 
 def pokeTDLconf(filename,param,value):
 	lines = []
@@ -111,7 +112,8 @@ if 3 in do_steps:
 	cc+= 'vis="'+msName+'",'
 	cc+= 'caltable="'+bpTable+'",'
 	cc+= 'solnorm='+str(solnorm)+','
-	cc+= 'solint="inf")'
+	cc+= 'solint="inf",'
+	cc+= 'refant="'+ref_ant+'")'
 	std.runcasapy(cc)
 
 if delete_ms:
