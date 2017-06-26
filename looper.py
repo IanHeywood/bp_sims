@@ -52,13 +52,28 @@ def write_obsparams(prefix,
 	print >>f,'coordsys="'+str(coordsys)+'"'
 	f.close()
 
-for myfreq in ['0.7GHz','0.8GHz','0.9GHz','1.0GHz','1.1GHz','1.2GHz','1.3GHz','1.4GHz','1.5GHz','1.6GHz','1.7GHz']:
+# ASKAP
+bandfreqs = ['0.7GHz', '0.74GHz', '0.78GHz', '0.82GHz', '0.86GHz', '0.9GHz', '0.94GHz', '0.98GHz', '1.02GHz', '1.06GHz', '1.1GHz', '1.14GHz', '1.18GHz', '1.22GHz', '1.26GHz', '1.3GHz', '1.34GHz', '1.38GHz', '1.42GHz', '1.46GHz', '1.5GHz', '1.54GHz', '1.58GHz', '1.62GHz', '1.66GHz', '1.7GHz', '1.74GHz', '1.78GHz', '1.82GHz']
+
+# MeerKAT_L-band
+# bandfreqs = ['0.9GHz', '0.94GHz', '0.98GHz', '1.02GHz', '1.06GHz', '1.1GHz', '1.14GHz', '1.18GHz', '1.22GHz', '1.26GHz', '1.3GHz', '1.34GHz', '1.38GHz', '1.42GHz', '1.46GHz', '1.5GHz', '1.54GHz', '1.58GHz', '1.62GHz', '1.66GHz', '1.7GHz']
+
+# MeerKAT_UHF
+# bandfreqs = ['0.58GHz', '0.62GHz', '0.66GHz', '0.7GHz', '0.74GHz', '0.78GHz', '0.82GHz', '0.86GHz', '0.9GHz', '0.94GHz', '0.98GHz', '1.02GHz']
+
+# SKA-MID_Band-2
+# bandsfreqs = ['0.95GHz', '0.99GHz', '1.03GHz', '1.07GHz', '1.11GHz', '1.15GHz', '1.19GHz', '1.23GHz', '1.27GHz', '1.31GHz', '1.35GHz', '1.39GHz', '1.43GHz', '1.47GHz', '1.51GHz', '1.55GHz', '1.59GHz', '1.63GHz', '1.67GHz', '1.71GHz', '1.75GHz', '1.79GHz']
+
+# SKA-MID_Band-1
+# bandfreqs = ['0.35GHz', '0.39GHz', '0.43GHz', '0.47GHz', '0.51GHz', '0.55GHz', '0.59GHz', '0.63GHz', '0.67GHz', '0.71GHz', '0.75GHz', '0.79GHz', '0.83GHz', '0.87GHz', '0.91GHz', '0.95GHz', '0.99GHz', '1.03GHz', '1.07GHz']
+
+for myfreq in bandfreqs:
 	for caltime in [300,600,900]:
 		mystart = -1*caltime/2
 		write_obsparams('bpsims',
 			'askap',
 			myfreq,
-			1024,
+			2000,
 			'20kHz',
 			mystart,
 			caltime)
